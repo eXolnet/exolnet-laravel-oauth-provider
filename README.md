@@ -1,1 +1,1 @@
-# exolnet-laravel-oauth-provider
+# Laravel OAuth provider for eXolnet SSO
