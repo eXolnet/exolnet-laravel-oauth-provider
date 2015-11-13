@@ -1,0 +1,24 @@
+{
+	"name": "exolnet/exolnet-laravel-oauth-provider",
+	"description": "Laravel OAuth provider for eXolnet SSO.",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Alexandre D'Eschambeault",
+			"email": "adeschambeault@exolnet.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"league/oauth2-client": "~1.0"
+	},
+	"require-dev": {
+		"phpspec/phpspec": "~2.0",
+		"phpunit/phpunit": "~3.7"
+	},
+	"autoload": {
+		"psr-0": {
+			"Exolnet\\OAuth": "src/"
+		}
+	}
+}
