@@ -1,5 +1,5 @@
 {
-	"name": "exolnet/exolnet-laravel-oauth-provider",
+	"name": "exolnet/laravel-oauth-provider",
 	"description": "Laravel OAuth provider for eXolnet SSO.",
 	"license": "MIT",
 	"authors": [
