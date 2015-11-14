@@ -13,7 +13,7 @@
  * @author     eXolnet Inc. <info@exolnet.com>
  */
 
-use Controller;
+use Illuminate\Routing\Controller;
 use Input;
 use Redirect;
 

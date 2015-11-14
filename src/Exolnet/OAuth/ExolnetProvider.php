@@ -37,7 +37,7 @@ class ExolnetProvider extends AbstractProvider
 	 */
 	public function getDomain()
 	{
-		return Config::get('oauth.domain') ?: $this->domain;
+		return rtrim(Config::get('oauth.domain') ?: $this->domain, '/');
 	}
 
 	/**
