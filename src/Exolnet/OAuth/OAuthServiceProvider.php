@@ -4,15 +4,34 @@ use Illuminate\Support\ServiceProvider;
 
 class OAuthServiceProvider extends ServiceProvider {
 	/**
+	 * Booting
+	 */
+	public function boot()
+	{
+		$this->publishes([
+			__DIR__.'/../../config/oauth.php' => config_path('oauth.php'),
+		]);
+	}
+
+	/**
 	 * Register the service provider.
 	 *
 	 * @return void
 	 */
 	public function register()
 	{
+		$this->registerConfiguration();
 		$this->registerService();
 		$this->registerController();
 		$this->registerFilter();
+	}
+
+	/**
+	 * @return void
+	 */
+	protected function registerConfiguration()
+	{
+		$this->mergeConfigFrom(__DIR__.'/../../config/oauth.php', 'oauth');
 	}
 
 	/**
